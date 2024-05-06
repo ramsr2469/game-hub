@@ -20,9 +20,6 @@ function SortSelector({ gameQuery, onSelectSortOrder }: Props) {
   const selectedSortOrder = sortOrders.find(
     (sortOrder) => sortOrder.value === gameQuery?.sortOrder
   );
-
-  // const { data, error } = usePlatforms();
-  // if (error) return null;
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
